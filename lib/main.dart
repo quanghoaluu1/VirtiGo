@@ -5,10 +5,14 @@ import 'package:get/get.dart';
 import 'package:virtigo/routes/app_pages.dart';
 import 'package:virtigo/routes/app_routes.dart';
 
+import 'firebase_options.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
   runApp(
     EasyLocalization(

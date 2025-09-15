@@ -1,6 +1,17 @@
 {
   "login": "Login",
-  "register": "Register",
+  "signup": "Sign up",
   "welcome": "Greetings",
-  "quote": "Start your journey to explore the treasures of Vietnamese culture anytime, anywhere."
+  "quote": "Start your journey to explore the treasures of Vietnamese culture anytime, anywhere.",
+  "signup_quote": "It's time to unlock your destination travel point",
+  "login_quote": "Next journey is waiting for you",
+  "username": "Username",
+  "password": "Password",
+  "email": "Email",
+  "confirm_password": "Confirm Password",
+  "receive_notification": "Receive Notification",
+  "already_have_account": "Already have an account?",
+  "dont_have_account": "Don't have an account?",
+  "forgot_password": "Forgot Password?",
+  "or": "Or"
 }

@@ -1,6 +1,17 @@
 {
   "login": "Đăng nhập",
-  "register": "Đăng ký",
+  "signup": "Đăng ký",
   "welcome": "Xin Chào!",
-  "quote": "Bắt đầu hành trình của bạn để khám phá kho tàng văn hóa Việt Nam mọi lúc, mọi nơi"
+  "quote": "Bắt đầu hành trình của bạn để khám phá kho tàng văn hóa Việt Nam mọi lúc, mọi nơi",
+  "signup_quote": "Đã đến lúc để mở khóa điểm đến du lịch của bạn",
+  "login_quote": "Hành trình tiếp theo đang chờ đón bạn",
+  "username": "Tên đăng nhập",
+  "password": "Mật khẩu",
+  "email": "Email",
+  "confirm_password": "Xác nhận mật khẩu",
+  "receive_notification": "Nhận thông báo",
+  "already_have_account": "Đã có tài khoản?",
+  "dont_have_account": "Chưa có tài khoản?",
+  "forgot_password": "Quên mật khẩu?",
+  "or": "Hoặc"
 }

@@ -1,6 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:virtigo/config/app_colors.dart';
+import 'package:virtigo/pages/login_page.dart';
+import 'package:virtigo/pages/signup_page.dart';
 
 import '../utils/gradient_text.dart';
 
@@ -77,7 +79,13 @@ class WelcomePage extends StatelessWidget {
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (_) =>
+                            LoginPage()),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.white,
                       foregroundColor: Colors.black,
@@ -100,7 +108,13 @@ class WelcomePage extends StatelessWidget {
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (_) =>
+                            SignupPage()),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.white,
                       foregroundColor: Colors.black,
@@ -110,7 +124,7 @@ class WelcomePage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(vertical: 14),
                     ),
                     child: Text(
-                      'register'.tr(),
+                      'signup'.tr(),
                       style: TextStyle(
                         color: AppColors.primary,
                         fontWeight: FontWeight.w600,
