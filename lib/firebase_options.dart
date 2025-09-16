@@ -44,9 +44,9 @@ class DefaultFirebaseOptions {
     apiKey: 'AIzaSyAHw-tpFSmW55GT4OYW6_2SySN1JMzQ7MQ',
     appId: '1:850945219885:web:93659667cab405dc1b47a4',
     messagingSenderId: '850945219885',
-    projectId: 'virtigo-exe2',
-    authDomain: 'virtigo-exe2.firebaseapp.com',
-    storageBucket: 'virtigo-exe2.firebasestorage.app',
+    projectId: 'com.nightcore.virtigo-exe2',
+    authDomain: 'com.nightcore.virtigo-exe2.firebaseapp.com',
+    storageBucket: 'com.nightcore.virtigo-exe2.firebasestorage.app',
     measurementId: 'G-91FVVGNX7Z',
   );
 
@@ -54,35 +54,35 @@ class DefaultFirebaseOptions {
     apiKey: 'AIzaSyASsQe0TbtIDq-BjJRkzmc7pLNIh3s1vuw',
     appId: '1:850945219885:android:d0b9bd1a6230dc6d1b47a4',
     messagingSenderId: '850945219885',
-    projectId: 'virtigo-exe2',
-    storageBucket: 'virtigo-exe2.firebasestorage.app',
+    projectId: 'com.nightcore.virtigo-exe2',
+    storageBucket: 'com.nightcore.virtigo-exe2.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyA-JjYhzY1K_HYwOg-JP9CQ6GMeq4zRuuw',
     appId: '1:850945219885:ios:2bc2342e781cb6f71b47a4',
     messagingSenderId: '850945219885',
-    projectId: 'virtigo-exe2',
-    storageBucket: 'virtigo-exe2.firebasestorage.app',
-    iosBundleId: 'com.example.virtigo',
+    projectId: 'com.nightcore.virtigo-exe2',
+    storageBucket: 'com.nightcore.virtigo-exe2.firebasestorage.app',
+    iosBundleId: 'com.example.com.nightcore.virtigo',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyA-JjYhzY1K_HYwOg-JP9CQ6GMeq4zRuuw',
     appId: '1:850945219885:ios:2bc2342e781cb6f71b47a4',
     messagingSenderId: '850945219885',
-    projectId: 'virtigo-exe2',
-    storageBucket: 'virtigo-exe2.firebasestorage.app',
-    iosBundleId: 'com.example.virtigo',
+    projectId: 'com.nightcore.virtigo-exe2',
+    storageBucket: 'com.nightcore.virtigo-exe2.firebasestorage.app',
+    iosBundleId: 'com.example.com.nightcore.virtigo',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
     apiKey: 'AIzaSyAHw-tpFSmW55GT4OYW6_2SySN1JMzQ7MQ',
     appId: '1:850945219885:web:263e36facb877f701b47a4',
     messagingSenderId: '850945219885',
-    projectId: 'virtigo-exe2',
-    authDomain: 'virtigo-exe2.firebaseapp.com',
-    storageBucket: 'virtigo-exe2.firebasestorage.app',
+    projectId: 'com.nightcore.virtigo-exe2',
+    authDomain: 'com.nightcore.virtigo-exe2.firebaseapp.com',
+    storageBucket: 'com.nightcore.virtigo-exe2.firebasestorage.app',
     measurementId: 'G-LB8QDTK005',
   );
 }

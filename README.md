@@ -1,4 +1,4 @@
-# virtigo
+# com.nightcore.virtigo
 
 VirtiGo Project
 

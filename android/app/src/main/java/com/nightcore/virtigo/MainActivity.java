@@ -1,4 +1,4 @@
-package com.example.virtigo;
+package com.nightcore.virtigo;
 
 import io.flutter.embedding.android.FlutterActivity;
 
