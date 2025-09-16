@@ -10,10 +10,11 @@ import 'firebase_options.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   print("Firebase initializing...");
-  await Firebase.initializeApp(
-    name: 'VirtiGo',
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  if (Firebase.apps.isEmpty) {
+    await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  }else{
+    Firebase.app();
+  }
   print("Firebase initialized");
 await AppTranslations.init();
   runApp(

@@ -46,12 +46,16 @@ class SignupPage extends StatelessWidget {
 
                        AuthTextField(hintText: 'username', keyboardType: TextInputType.name,),
                       const SizedBox(height: 16,),
-                       AuthTextField(hintText: 'email', keyboardType: TextInputType.emailAddress,),
+                       AuthTextField(
+                         hintText: 'email',
+                         keyboardType: TextInputType.emailAddress,
+                       onChange: (v) => controller.email.value = v,),
                       const SizedBox(height: 16,),
                        AuthTextField(
                         hintText: 'password',
                         obscureText: true,
                         suffixIcon: Icons.visibility_off,
+                         onChange: (v) => controller.password.value = v,
                       ),
                       const SizedBox(height: 16,),
                        AuthTextField(

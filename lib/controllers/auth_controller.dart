@@ -13,6 +13,8 @@ class AuthController extends GetxController{
   Future<void> signUp() async{
     try{
       isLoading.value = true;
+      print("Signing up with email: ${email.value}");
+      print("Password: ${password.value}");
       User? user = await _authService.signUp(email.value, password.value);
       if (user != null){
         Get.snackbar("Success", 'signup_success'.tr);
