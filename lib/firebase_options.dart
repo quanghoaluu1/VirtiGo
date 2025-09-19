@@ -52,7 +52,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyASsQe0TbtIDq-BjJRkzmc7pLNIh3s1vuw',
-    appId: '1:850945219885:android:d0b9bd1a6230dc6d1b47a4',
+    appId: '1:850945219885:android:c8b22f9a04e0d49f1b47a4',
     messagingSenderId: '850945219885',
     projectId: 'virtigo-exe2',
     storageBucket: 'virtigo-exe2.firebasestorage.app',
@@ -60,20 +60,24 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyA-JjYhzY1K_HYwOg-JP9CQ6GMeq4zRuuw',
-    appId: '1:850945219885:ios:2bc2342e781cb6f71b47a4',
+    appId: '1:850945219885:ios:f0481e53bd715b9d1b47a4',
     messagingSenderId: '850945219885',
     projectId: 'virtigo-exe2',
     storageBucket: 'virtigo-exe2.firebasestorage.app',
-    iosBundleId: 'com.example.virtigo',
+    androidClientId: '850945219885-o27au1er92p9vvhhqvhhun3j6shluoit.apps.googleusercontent.com',
+    iosClientId: '850945219885-tj6msbi2fp0dhocj2hclovpkt1kmo8ac.apps.googleusercontent.com',
+    iosBundleId: 'com.example.com.nightcore.virtigo',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyA-JjYhzY1K_HYwOg-JP9CQ6GMeq4zRuuw',
-    appId: '1:850945219885:ios:2bc2342e781cb6f71b47a4',
+    appId: '1:850945219885:ios:f0481e53bd715b9d1b47a4',
     messagingSenderId: '850945219885',
     projectId: 'virtigo-exe2',
     storageBucket: 'virtigo-exe2.firebasestorage.app',
-    iosBundleId: 'com.example.virtigo',
+    androidClientId: '850945219885-o27au1er92p9vvhhqvhhun3j6shluoit.apps.googleusercontent.com',
+    iosClientId: '850945219885-tj6msbi2fp0dhocj2hclovpkt1kmo8ac.apps.googleusercontent.com',
+    iosBundleId: 'com.example.com.nightcore.virtigo',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
@@ -85,4 +89,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'virtigo-exe2.firebasestorage.app',
     measurementId: 'G-LB8QDTK005',
   );
+
 }

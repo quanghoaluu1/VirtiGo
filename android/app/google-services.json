@@ -7,12 +7,25 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:850945219885:android:d0b9bd1a6230dc6d1b47a4",
+        "mobilesdk_app_id": "1:850945219885:android:c8b22f9a04e0d49f1b47a4",
         "android_client_info": {
-          "package_name": "com.example.virtigo"
+          "package_name": "com.nightcore.virtigo"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "850945219885-o27au1er92p9vvhhqvhhun3j6shluoit.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nightcore.virtigo",
+            "certificate_hash": "0888ac170996e4f5622261d84ed3ced05d143844"
+          }
+        },
+        {
+          "client_id": "850945219885-ll83g37eukk7j3b3keod7qa8fu1k5dtd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyASsQe0TbtIDq-BjJRkzmc7pLNIh3s1vuw"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "850945219885-ll83g37eukk7j3b3keod7qa8fu1k5dtd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "850945219885-2fhh9bmtc79982muo20gf76635qrb30n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.virtigo"
+              }
+            }
+          ]
         }
       }
     }

@@ -1,10 +1,11 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:virtigo/pages/login_page.dart';
 import 'package:virtigo/themes/gradient_background.dart';
 import 'package:virtigo/widgets/social_button.dart';
+import 'package:get/get.dart';
 
 import '../config/app_colors.dart';
+import '../controllers/auth_controller.dart';
 import '../widgets/auth_button.dart';
 import '../widgets/auth_textfield.dart';
 
@@ -13,18 +14,19 @@ class SignupPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.find<AuthController>();
     return Scaffold(
       body: Stack(
           children: [
-            const GradientBackground(height: 220),
+             GradientBackground(height: 220),
             SingleChildScrollView(
-                padding: const EdgeInsets.symmetric(
+                padding:  EdgeInsets.symmetric(
                     horizontal: 20, vertical: 60),
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const SizedBox(height: 150,),
-                      Text('signup'.tr(),
+                      Text('signup'.tr,
                         style: TextStyle(
                           fontFamily: 'Baloo',
                             color: AppColors.button,
@@ -32,8 +34,8 @@ class SignupPage extends StatelessWidget {
                             fontWeight: FontWeight.w400),
                       ),
                       const SizedBox(height: 8,),
-                      Text('signup_quote'.tr(),
-                      style: const TextStyle(
+                      Text('signup_quote'.tr,
+                      style:  TextStyle(
                         color: AppColors.primary,
                         fontFamily: 'Beiruti',
                         fontWeight: FontWeight.w500,
@@ -42,17 +44,22 @@ class SignupPage extends StatelessWidget {
                       ),),
                       const SizedBox(height: 20,),
 
-                      const AuthTextField(hintText: 'username', keyboardType: TextInputType.name,),
+                       AuthTextField(hintText: 'username', keyboardType: TextInputType.name,
+                       onChange: (v) => controller.username.value = v,),
                       const SizedBox(height: 16,),
-                      const AuthTextField(hintText: 'email', keyboardType: TextInputType.emailAddress,),
+                       AuthTextField(
+                         hintText: 'email',
+                         keyboardType: TextInputType.emailAddress,
+                       onChange: (v) => controller.email.value = v,),
                       const SizedBox(height: 16,),
-                      const AuthTextField(
+                       AuthTextField(
                         hintText: 'password',
                         obscureText: true,
                         suffixIcon: Icons.visibility_off,
+                         onChange: (v) => controller.password.value = v,
                       ),
                       const SizedBox(height: 16,),
-                      const AuthTextField(
+                       AuthTextField(
                         hintText: 'confirm_password',
                         obscureText: true,
                         suffixIcon: Icons.visibility_off,
@@ -67,8 +74,8 @@ class SignupPage extends StatelessWidget {
                               checkColor: Colors.white,
                               activeColor: AppColors.button,
                               onChanged: (val) {}),
-                          Text('receive_notification'.tr(),
-                          style: const TextStyle(
+                          Text('receive_notification'.tr,
+                          style:  TextStyle(
                               color: AppColors.button,
                             fontSize: 20,
                             fontFamily: 'Beiruti'
@@ -77,13 +84,13 @@ class SignupPage extends StatelessWidget {
                       ),
                       const SizedBox(height: 16,),
 
-                      AuthButton(text: 'signup'.tr(), onPressed: () {}),
+                      AuthButton(text: 'signup'.tr, onPressed: () => controller.register()),
                       const SizedBox(height: 16,),
 
                       Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('already_have_account'.tr(), style: const TextStyle(color: AppColors.light),),
+                            Text('already_have_account'.tr, style:  TextStyle(color: AppColors.light),),
                             GestureDetector(
                                 onTap: () {
                                   Navigator.push(
@@ -92,8 +99,8 @@ class SignupPage extends StatelessWidget {
                                         LoginPage()),
                                   );
                                 },
-                                child: Text('login'.tr(),
-                                  style: const TextStyle(
+                                child: Text('login'.tr,
+                                  style:  TextStyle(
                                     color: AppColors.primary,
                                   ),
                                 )
@@ -103,7 +110,7 @@ class SignupPage extends StatelessWidget {
                       const SizedBox(height: 20,),
 
                       Row(
-                        children: const [
+                        children:  [
                           Expanded(child: Divider(color: AppColors.primary,)),
                           Padding(
                             padding: EdgeInsets.symmetric(horizontal: 10),
@@ -111,7 +118,8 @@ class SignupPage extends StatelessWidget {
                           ),
                           Expanded(child: Divider(color: AppColors.primary,)),
                         ],
-                      ),                      const SizedBox(height: 16,),
+                      ),
+                      const SizedBox(height: 16,),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [

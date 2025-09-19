@@ -1,8 +1,8 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:virtigo/config/app_colors.dart';
 import 'package:virtigo/pages/login_page.dart';
 import 'package:virtigo/pages/signup_page.dart';
+import 'package:get/get.dart';
 
 import '../utils/gradient_text.dart';
 
@@ -54,8 +54,7 @@ class WelcomePage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text(
-                  'welcome'.tr(),
+                Text('welcome'.tr,
                   textAlign: TextAlign.left,
                   style: TextStyle(
                     fontSize: 50,
@@ -65,8 +64,7 @@ class WelcomePage extends StatelessWidget {
                   ),
                 ),
                 // const SizedBox(height: 24),
-                Text(
-                  'quote'.tr(),
+                Text('quote'.tr,
                   textAlign: TextAlign.left,
                   style: TextStyle(
                     color: Color(0xFF097083),
@@ -94,8 +92,7 @@ class WelcomePage extends StatelessWidget {
                       ),
                       padding: const EdgeInsets.symmetric(vertical: 14),
                     ),
-                    child: Text(
-                      'login'.tr(),
+                    child: Text('login'.tr,
                       style: TextStyle(
                         color: AppColors.primary,
                         fontWeight: FontWeight.w600,
@@ -123,8 +120,7 @@ class WelcomePage extends StatelessWidget {
                       ),
                       padding: const EdgeInsets.symmetric(vertical: 14),
                     ),
-                    child: Text(
-                      'signup'.tr(),
+                    child: Text('signup'.tr,
                       style: TextStyle(
                         color: AppColors.primary,
                         fontWeight: FontWeight.w600,

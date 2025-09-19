@@ -1,4 +1,4 @@
-import 'package:easy_localization/easy_localization.dart';
+import 'package:virtigo/services/translation_service.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -9,19 +9,16 @@ import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await EasyLocalization.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-
+  print("Firebase initializing...");
+  if (Firebase.apps.isEmpty) {
+    await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  }else{
+    Firebase.app();
+  }
+  print("Firebase initialized");
+await AppTranslations.init();
   runApp(
-    EasyLocalization(
-      supportedLocales: const [Locale('en'), Locale('vi')],
-      path: 'assets/translations',
-      fallbackLocale: const Locale('vi'),
-      startLocale: const Locale('vi'),
-      child: const MyApp(),
-    ),
+    const MyApp(),
   );
 }
 
@@ -34,9 +31,9 @@ class MyApp extends StatelessWidget {
       title: 'VirtiGo',
       debugShowCheckedModeBanner: false,
       initialRoute: Routes.welcome,
-      localizationsDelegates: context.localizationDelegates,
-      supportedLocales: context.supportedLocales,
-      locale: context.locale,
+      translations: AppTranslations(),
+      locale: const Locale('vi', 'VN'),
+      fallbackLocale: const Locale('vi', 'VN'),
       getPages: AppPage.pages,
     );
   }

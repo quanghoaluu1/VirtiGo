@@ -1,7 +1,7 @@
 
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:virtigo/config/app_colors.dart';
+import 'package:get/get.dart';
 
 class AuthButton extends StatelessWidget{
   final String text;
@@ -27,7 +27,7 @@ class AuthButton extends StatelessWidget{
         ),
         onPressed: onPressed,
         child: Text(
-          text.tr(),
+          text.tr,
           style: const TextStyle(
             fontFamily: 'Beiruti',
             color: Colors.white,

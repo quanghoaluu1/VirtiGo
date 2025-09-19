@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "virtigo" "\0"
+            VALUE "FileDescription", "com.nightcore.virtigo" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "virtigo" "\0"
+            VALUE "InternalName", "com.nightcore.virtigo" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2025 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "virtigo.exe" "\0"
-            VALUE "ProductName", "virtigo" "\0"
+            VALUE "OriginalFilename", "com.nightcore.virtigo.exe" "\0"
+            VALUE "ProductName", "com.nightcore.virtigo" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
