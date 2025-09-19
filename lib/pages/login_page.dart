@@ -71,7 +71,7 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 12),
-                AuthButton(text: 'login'.tr, onPressed: () => controller.signIn()),
+                AuthButton(text: 'login'.tr, onPressed: () => controller.login()),
                 const SizedBox(height: 25),
 
                 Row(

@@ -44,7 +44,8 @@ class SignupPage extends StatelessWidget {
                       ),),
                       const SizedBox(height: 20,),
 
-                       AuthTextField(hintText: 'username', keyboardType: TextInputType.name,),
+                       AuthTextField(hintText: 'username', keyboardType: TextInputType.name,
+                       onChange: (v) => controller.username.value = v,),
                       const SizedBox(height: 16,),
                        AuthTextField(
                          hintText: 'email',
@@ -83,7 +84,7 @@ class SignupPage extends StatelessWidget {
                       ),
                       const SizedBox(height: 16,),
 
-                      AuthButton(text: 'signup'.tr, onPressed: () => controller.signUp()),
+                      AuthButton(text: 'signup'.tr, onPressed: () => controller.register()),
                       const SizedBox(height: 16,),
 
                       Row(
